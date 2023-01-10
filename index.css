@@ -13,7 +13,6 @@ body{
 }
 
 .container {
-  height: 528px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -24,18 +23,21 @@ body{
   font-family: Arial;
   color: antiquewhite;
 }
-.form-control {
-  max-width: 600px;
-  left: 814px;
-  background-color: #FBC100;
-  border-radius: 10px;
-  justify-content: center;
+.banner-form {
+  width: 295px;
+  background: #FBC100;
+  border-radius: 15px;
+  padding: 20px 30px;
 }
-.list-items {
-  list-style: none;
-  margin: 0;
-  padding: 10px;
-}
+
+.banner-form form  { } 
+.banner-form form ul {padding: 0px; margin: 0px;}
+.banner-form form ul li {list-style-type: none; padding-bottom: 10px;}
+.banner-form form ul li .form-control {width: 100%; background: #ffffff; border-radius: 6px; height: 50px; border: 0px; padding: 0 20px; }
+.banner-form form ul li .form-select {width: 100%; background: #ffffff; border-radius: 6px; height: 50px; border: 0px; padding: 0 20px; }
+.banner-form form ul li .form-area {width: 100%; background: #ffffff; border-radius: 6px; padding: 10px 20px; resize: none; font-size: 20px; color: #000000;} 
+.banner-form form ul li .form-button {width: 100%; height: 54px; background: #105F83; border-radius: 6px; color: #ffffff; font-size: 16px; 
+  text-transform: uppercase; border: 0px; cursor: pointer; }
 .form-elements {
   padding: 10px;
   margin: 10px 0px;
@@ -50,7 +52,8 @@ body{
   background-repeat: no-repeat;
   align-items: baseline;
 }
-.investmentheadings {
+.investheadings h2 {
+  margin: 0px;
 }
 .benefits {
   margin: 0 auto;
@@ -76,81 +79,94 @@ body{
 .servicesofferedpage {
   background-color: #E6EFF2;
   margin-bottom: 0;
-  
+  column-count: 2;
 }
-.servicespart {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 900px;
-  
+.services-container p {
+  background-color: #FBC100;
+  font-size: xx-large;
+  margin: 0 300px;
+  width: 480px;
+  height: 88px;
+  padding-top: 25px;
+  border-radius: 50px;
 }
 .landmonitoring {
-  border-style:groove ;
+  
+  padding: 20px;
+  margin: auto;
+  display: inline-block;
+  border-style: solid ;
   border-color: black;
-  width: 470px;
-  height: 772px;
   margin: 10px;
-  padding-top: 15px;
-  border-width: 2px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0px 0px 50px #930f0f08;
-}
-.maintenance {
-  border-style:groove ;
-  border-color: black;
-  width: 470px;
-  height: 509px;
-  margin: 10px;
-  padding-top: 15px;
-  border-width: 2px;
-  border-radius: 15px;
-  text-align: center;
-}
-.investments {
-  border-style:groove ;
-  border-color: black;
-  width: 470px;
-  height: 568px;
-  margin: 10px;
-  padding-top: 15px;
-  border-width: 2px;
-  border-radius: 15px;
-  text-align: center;
-}
-.salesassistance {
-  border-style:groove ;
-  border-color: black;
-  width: 470px;
-  height: 715px;
-  margin: 10px;
-  padding-top: 15px;
-  border-width: 2px;
-  border-radius: 15px;
-  text-align: center;
 }
 .benefits2{
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 800px;
+  background-color: #CEA752;
+  padding: 0 150px;
+}
+.benefits2 div {
+  display: flex;
+  border: #000000;
+  border-right-style: solid;
+  border-width: 1.5px;
+  padding: 0 20px;
+}
+.tilted-img {
+  -webkit-clip-path: polygon(100% 81%, 0% 100%, 100% 100%);
+clip-path: polygon(100% 81%, 0% 100%, 100% 100%);
+background-color: #1D3155;
 }
 .benefits3 {
-  margin: 0 auto;
-  display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 700px;
+  background-color: #D8B361;
+  flex-wrap: wrap;
+  column-count: 2;
 }
 .benefit3detail{
   background-color: #FFFFFF;
   border-radius: 10px;
-  width: 475px;
-  padding-left: 10px;
+  width: 305px;
+  height: 40px;
+  padding: 0 20px;
   margin: 10px;
+  background-image: url('Path 9812.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: antiquewhite;
+}
+.footer-sec {
+  margin: 10px 40px;
+}
+.icons{
+  width: 20px;
+  height: 20px;
+  margin-left: 60px;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 1px;
+}
+.logo {
+  width: 40px;
+  height: 20px;
+}
+.logo2 {
+  width: 150px;
+  height: 75px;
+}
+.footer-sec h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
