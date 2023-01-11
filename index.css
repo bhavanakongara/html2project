@@ -76,10 +76,20 @@ body{
 .groupimg {
   background-repeat: no-repeat;
 }
-.servicesofferedpage {
+.servicesofferedmain {
   background-color: #E6EFF2;
+  padding-left: 200px;
+}
+.servicesofferedmain h2 {
+  margin: 0px;
+}
+.servicesofferedpage {
   margin-bottom: 0;
   column-count: 2;
+  max-width: 800px;
+}
+.landmonitoring ul {
+  list-style-type: none;
 }
 .services-container p {
   background-color: #FBC100;
@@ -91,7 +101,7 @@ body{
   border-radius: 50px;
 }
 .landmonitoring {
-  
+  width: 100%;
   padding: 20px;
   margin: auto;
   display: inline-block;
@@ -99,7 +109,7 @@ body{
   border-color: black;
   margin: 10px;
   border-radius: 15px;
-  text-align: center;
+  text-align: left;
   box-shadow: 0px 0px 50px #930f0f08;
 }
 .benefits2{
@@ -122,12 +132,16 @@ body{
 clip-path: polygon(100% 81%, 0% 100%, 100% 100%);
 background-color: #1D3155;
 }
+.benefits3main {
+  background-color: #D8B361;
+  padding-left: 200px;
+}
 .benefits3 {
   align-items: center;
   justify-content: space-between;
-  background-color: #D8B361;
   flex-wrap: wrap;
   column-count: 2;
+  max-width: 900px;
 }
 .benefit3detail{
   background-color: #FFFFFF;
@@ -139,6 +153,7 @@ background-color: #1D3155;
   background-image: url('Path 9812.png');
   background-repeat: no-repeat;
   background-position: right;
+  margin: 0px;
 }
 footer {
   display: flex;
