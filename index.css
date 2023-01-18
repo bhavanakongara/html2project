@@ -23,6 +23,11 @@ body{
   font-family: Arial;
   color: antiquewhite;
 }
+.error-message {
+  color: #dc3545;
+  font-family: "Roboto";
+  font-size: 14px;
+}
 .banner-form {
   width: 295px;
   background: #FBC100;
@@ -33,6 +38,7 @@ body{
 .banner-form form  { } 
 .banner-form form ul {padding: 0px; margin: 0px;}
 .banner-form form ul li {list-style-type: none; padding-bottom: 10px;}
+.banner-form form ul li p {margin: 0px; padding: 0px;}
 .banner-form form ul li .form-control {width: 100%; background: #ffffff; border-radius: 6px; height: 50px; border: 0px; padding: 0 20px; }
 .banner-form form ul li .form-select {width: 100%; background: #ffffff; border-radius: 6px; height: 50px; border: 0px; padding: 0 20px; }
 .banner-form form ul li .form-area {width: 100%; background: #ffffff; border-radius: 6px; padding: 10px 20px; resize: none; font-size: 20px; color: #000000;} 
@@ -103,7 +109,6 @@ body{
 .landmonitoring {
   width: 100%;
   padding: 20px;
-  margin: auto;
   display: inline-block;
   border-style: solid ;
   border-color: black;
@@ -144,6 +149,7 @@ background-color: #1D3155;
   max-width: 900px;
 }
 .benefit3detail{
+  display: inline-block;
   background-color: #FFFFFF;
   border-radius: 10px;
   width: 305px;

@@ -6,6 +6,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
+    <script src="./html2.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -19,24 +20,28 @@
             </div>
             <div class="banner-form">
                 <h3 class="form-elements">Ready to Get Started</h3>
-                <form>
+                <form id="acrewatchForm">
                   <ul>
                     <li>
-                      <input type="text" class="form-elements" placeholder="Name*">
+                      <input type="text" class="form-elements" placeholder="Name*" id="name">
+                      <p id="nameErrMsg" class="error-message"></p>
                     </li>
                     <li>
-                      <input type="text" class="form-elements" placeholder="Email*">
+                      <input type="text" class="form-elements" placeholder="Email*" id="email">
+                      <p id="emailErrMsg" class="error-message"></p>
                     </li>
                     <li>
-                      <input type="text" class="form-elements" placeholder="Mobile Number*">
+                      <input type="text" class="form-elements" placeholder="Mobile Number*" id="mobile">
+                      <p id="mobileErrMsg" class="error-message"></p>
                     </li>
                     <li>
-                      <select class="form-select">
-                        <option class="options">Choose Service*</option>
-                        <option class="options">Option 1</option>
-                        <option class="options">Option 2</option>
-                        <option class="optoins">Option 3</option>
+                      <select class="form-select" id="services">
+                        <option class="options" value="1">Choose Service*</option>
+                        <option class="options" value="2">Option 1</option>
+                        <option class="options" value="3">Option 2</option>
+                        <option class="optoins" value="4">Option 3</option>
                       </select>
+                      <p id="mobileErrMsg" class="error-message"></p>
                     </li>
                     <li>
                       <textarea class="form-area" placeholder="Message"></textarea>
