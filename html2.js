@@ -3,26 +3,31 @@ window.onload = loadEvents
 
 function loadEvents() {
 let acrewatchFormEl = document.getElementById("acrewatchForm");
-console.log(acrewatchFormEl)
-let nameEl = document.getElementById("name");
-console.log(nameEl)
-let nameErrMsgEl = document.getElementById("nameErrMsg");
+let submitMsgEl = document.getElementById("submitMsg");
 
-let emailEl = document.getElementById("email");
+let nameEl = document.getElementsByClassName("required");
+let errMsgEl = document.getElementsByClassName("errMsg");
+
+/*let emailEl = document.getElementById("email");
 let emailErrMsgEl = document.getElementById("emailErrMsg");
 
 let mobileEl = document.getElementById("mobile");
-let mobileErrMsgEl = document.getElementById("mobileErrMsg");
+let mobileErrMsgEl = document.getElementById("mobileErrMsg");*/
 
-nameEl.addEventListener("blur", function(event) {
-  if (event.target.value === "") {
-    nameErrMsgEl.textContent = "Enter Value";
-  } else {
-    nameErrMsgEl.textContent = "";
-  }
-});
-
-emailEl.addEventListener("blur", function(event) {
+for (let i = 0; i < nameEl.length; i++){
+    let events = ["blur", "keyup"]
+    for (eventElement in events) {
+        console.log(events[i])
+       nameEl[i].addEventListener(events[i], function(event) {
+        if (event.target.value === "") {
+            errMsgEl[i].textContent =nameEl[i].getAttribute("msg");
+        } else {
+            errMsgEl.textContent = "";
+        }
+        });
+    }
+}
+/*emailEl.addEventListener("blur", function(event) {
   if (event.target.value === "") {
     emailErrMsgEl.textContent = "Enter Value";
   } else {
@@ -36,11 +41,10 @@ mobileEl.addEventListener("blur", function(event) {
     } else {
       mobileErrMsgEl.textContent = "";
     }
-  });
+  });*/
 
 
 acrewatchFormEl.addEventListener("submit", function(event) {
-  event.preventDefault();
+    event.preventDefault();
 });
-
 }
