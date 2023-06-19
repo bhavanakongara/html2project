@@ -1,3 +1,47 @@
+$('#get').click(function(){
+    $.ajax({
+
+        type:"GET",
+        success:function(){
+            <form name="myForm" action="/action_page.php" method="post" id="acrewatchForm">
+                  <ul>
+                    <li>
+                      <input type="text" msg="Please enter name." class="form-elements required" placeholder="Name*">
+                      <p class="errMsg"></p>
+                    </li>
+                    <li>
+                      <input type="text" msg="Please enter email." class="form-elements required" placeholder="Email*">
+                      <p class="errMsg"></p>
+                    </li>
+                    <li>
+                      <input type="text" msg="Please enter mobile number." class="form-elements required" placeholder="Mobile Number*">
+                      <p class="errMsg"></p>
+                    </li>
+                    <li>
+                      <select class="form-select" id="services">
+                        <option class="options" value="1">Choose Service*</option>
+                        <option class="options" value="2">Option 1</option>
+                        <option class="options" value="3">Option 2</option>
+                        <option class="optoins" value="4">Option 3</option>
+                      </select>
+                    </li>
+                    <li>
+                      <textarea msg="Please enter message." class="form-area required" placeholder="Message"></textarea>
+                      <p class="errMsg"></p>
+                    </li>
+                    <li>
+                      <input class="form-button" type="submit" value="SUBMIT">
+                      <p id="submitMsg"></p>
+                    </li>
+                  </ul>
+                </form>
+
+        },
+        error : function(data){
+            console.log(data)
+        }
+    })
+})
 
 window.onload = loadEvents
 
